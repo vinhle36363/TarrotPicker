@@ -1,0 +1,16 @@
+.wrapper {
+    min-height: 100%;
+    max-width: 50%;
+    min-width: 40%;
+    left: 20%;
+    position: relative;
+    z-index: 1;
+    overflow-x: hidden;
+    text-align: center;
+    font-family: canterbury;
+}
+
+.wrapper img {
+    max-width: 50%;
+    min-width: 40%;
+}

@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url('CardPages/font/BerryRotunda.ttf');
+}
+
+body {
+    background-image: url("TarrotImg/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#wrapper {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    overflow-x: hidden;
+    font-family: MyFont;
+}
+
+.grid {
+    width: 100%;
+    text-align: center;
+}
+
+.right {
+    padding-top: 10%;
+    float: left;
+    width: 40%;
+    align-content: center;
+}
+
+.right img {
+    padding-left: 150px;
+}
+
+
+.text1 {
+    padding-top: 5%;
+    padding-right: 10%;
+    float: right;
+    width: 30%;
+    font-size: 25px;
+}
+
+.bellow {
+    float: left;
+    padding-top: 10px;
+    display: table-row;
+    font-size: 20px;
+}
+
+.bellow .past {
+    display: table-cell;
+}
+
+.bellow .present {
+    display: table-cell;
+}
+
+.bellow .future {
+    display: table-cell;
+}
+
+.bellow .interpretation {
+    display: table-cell;
+}

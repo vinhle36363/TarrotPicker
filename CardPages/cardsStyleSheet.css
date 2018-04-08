@@ -1,16 +1,63 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url('font/BerryRotunda.ttf');
+}
+
+body {
+    background-image: url("../TarrotImg/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .wrapper {
     min-height: 100%;
-    max-width: 50%;
+    max-width: 100%;
     min-width: 40%;
-    left: 20%;
     position: relative;
     z-index: 1;
     overflow-x: hidden;
     text-align: center;
-    font-family: canterbury;
+    font-family: MyFont;
 }
 
 .wrapper img {
-    max-width: 50%;
-    min-width: 40%;
+    max-width: 30%;
+    min-width: 20%;
+}
+
+.left {
+    float: left;
+    width: 50%;
+    font-size: 35px;
+}
+
+.text1 {
+    padding-top: 5%;
+    padding-right: 10%;
+    float: right;
+    width: 30%;
+    font-size: 25px;
+}
+
+.bellow {
+    float: left;
+    padding-top: 10px;
+    display: table-row;
+    font-size: 20px;
+}
+
+.bellow .past {
+    display: table-cell;
+}
+
+.bellow .present {
+    display: table-cell;
+}
+
+.bellow .future {
+    display: table-cell;
+}
+
+.bellow .interpretation {
+    display: table-cell;
 }

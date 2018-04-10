@@ -19,49 +19,59 @@ body {
 }
 
 .grid {
-    width: 100%;
-    text-align: center;
-}
-
-.right {
-    padding-top: 10%;
+    padding-top: 3%;
     float: left;
-    width: 40%;
-    align-content: center;
+    width: 70%;
+    text-align: center;
+    font-size: 35px;
 }
 
-.right img {
-    padding-left: 150px;
+.grid table {
+    padding-top: 2%;
 }
 
-
-.text1 {
-    padding-top: 5%;
-    padding-right: 10%;
+#right {
     float: right;
     width: 30%;
-    font-size: 25px;
+    text-align: center;
+    align-content: center;
+    font-size: 30px;
 }
 
 .bellow {
     float: left;
-    padding-top: 10px;
+    display: table-row;
+    font-size: 20px;
+    width: 65%;
+}
+
+.timeDesc {
+    width: 100%;
+    float: left;
+    padding-top: 3%;
     display: table-row;
     font-size: 20px;
 }
 
-.bellow .past {
+.timeDesc .past {
+    width: 20%;
     display: table-cell;
 }
 
-.bellow .present {
+.timeDesc .present {
+    width: 20%;
+    padding-left: 5%;
     display: table-cell;
 }
 
-.bellow .future {
+.timeDesc .future {
+    width: 20%;
+    padding-left: 5%;
     display: table-cell;
 }
 
-.bellow .interpretation {
+.timeDesc .interpretation {
+    width: 20%;
+    padding-left: 5%;
     display: table-cell;
 }

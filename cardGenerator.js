@@ -2,52 +2,214 @@ var deck = new Array();
 var deck1 = [
     {
         name: 'The Fool',
-        desc: 'he Fool is a very powerful card in the Tarot deck, usually' +
+        element: 'Carefree · Foolish · Important decisions · New beginnings · Optimistic',
+        desc: 'The Fool is a very powerful card in the Tarot deck, usually' +
         '                representing a new beginning - and, consequently,' +
         '                an end to something in your old life. The Fool\'s position in your' +
         '                spread reveals which aspects of your life may be subject to change.' +
         '                The Fool portends important decisions ahead which may not be easy to make,' +
         '                and involve an element of risk for you.' +
-        '                Approach the changes with optimism and care to gain the most positive outcome.'
+        '                Approach the changes with optimism and care to gain the most positive outcome.',
+        past: 'The risks you have taken and your original thinking have brought you success. By doing things in a new way, you have allowed for great potential.',
+        present: 'At this moment, you are entering a new phase of life. The experience of this change may seem good or bad now, but its influence will be clearer in the future. Assessing the risks is crucial to making the right choice.',
+        future: 'In order to succeed, you must find new ways to bring about the achievement of your goals. When the opportunity comes, you must be willing to shed old habits and if it never comes, it may be time to create it for yourself with new methods.',
+        interpretation: 'The Fool represents new beginnings and carefree adventure. Though this card could indicate foolishness, it is more optimistic in the sense that it stands for pure actions and being free from the constraints of your present life. More than likely, there are important decisions coming your way, and the answer to your question is yes.'
     },
     {
         name: 'The Magician',
-        desc: 'The Magician generally associates with intelligent and skillful communicators. His presence in your spread indicates a level of self-confidence and drive which allows you to translate ideas into action. A practical card, the revelations it brings are best applied to the pragmatic and physical aspects of your life, rather then the ephemeral or theoretical. Your success in upcoming ventures in politics or business will likely hinge upon your own strength of will and determination.'
+        element: 'Confident · Creative · Important communications · Skillful · Talented & proficient',
+        desc: 'The Magician generally associates with intelligent and skillful communicators. His presence in your spread indicates a level of self-confidence and drive which allows you to translate ideas into action. A practical card, the revelations it brings are best applied to the pragmatic and physical aspects of your life, rather then the ephemeral or theoretical. Your success in upcoming ventures in politics or business will likely hinge upon your own strength of will and determination.',
+        past: 'Your confidence and creativity have allowed you to effectively make your ideas into reality. You have found success through intelligence and skillful execution.',
+        present: 'Presently, there is a need for your knowledge and skills to influence the changes that are occuring. In order to make the changes beneficial, you must play your cards right.',
+        future: 'The future before you is uncertain, presenting both risk and opportunity. The possibilities will be influenced by the friendships you have nurtured and the support you have from those who are close. A triumph or creative success may bring about a new beginning for you.',
+        interpretation: 'The Magician is symbolic of action and power in your life. Its positive connotations illustrate someone who is a smooth talker and good at all aspects of communication. This card suggests using your strong will power to move forward and take action. The answer to your question is yes.'
     },
     {
         name: 'The High Priestess',
-        desc: 'Your identification with the High Priestess suggests you possess inherent good judgment, in the form of strong intuition. She may indicate that reason should take second place to instinct. Your head must trust in the wisdom of your heart for a change. Yet, she is also an aide by nature, and her presence in certain parts of your spread could be indicative of someone close to you coming to your rescue with their own intuition. Intuition is most effective at seeing what is hidden to the senses, so the High Priestess may also come as a warning of concealed facts or influences that are, or will be, important to you.'
+        element: 'Feminine influences · Insightful · Mystery · Understanding · Wisdom',
+        desc: 'Your identification with the High Priestess suggests you possess inherent good judgment, in the form of strong intuition. She may indicate that reason should take second place to instinct. Your head must trust in the wisdom of your heart for a change. Yet, she is also an aide by nature, and her presence in certain parts of your spread could be indicative of someone close to you coming to your rescue with their own intuition. Intuition is most effective at seeing what is hidden to the senses, so the High Priestess may also come as a warning of concealed facts or influences that are, or will be, important to you.',
+        past: 'You have been in need of new experiences and may wander somewhere outside of your comfort zone. If you are lacking support in important areas of your life, you should consider the idea of investing your time in new people and new ideas. You are entering a time of renewal, but you may need the help of another.',
+        present: 'The undiscovered or repressed creative abilities you have are demanding to be expressed. Finding a spiritual guide will help you realize the full potential of your psychic or artistic abilities. In order to get what you desire, you will need to overcome your fear of commitment.',
+        future: 'You are on course to receive real rewards, but only if you continue your discipline and motivation. If you reject the attempts to dissuade you, your future is bright. Follow your intuition and you are headed towards the lasting contentment of success.',
+        interpretation: 'The High Priestess is a spiritually intuitive woman full of mystery, wisdom, and understanding. A journey of self-discovery goes hand-in-hand with the presence of this card in your spread. She stands for things yet to be discovered in your life, and thus the answer to your question is unclear.'
     },
     {
         name: 'The Empress',
-        desc: 'Traditionally associated with strong maternal influence, the presence of the Empress is excellent news if you are looking for harmony in your marriage or hoping to start a family. Any artistic endeavours you are currently associated with are also likely to be more successful, as this card often finds those exposed to strong bursts of creative or artistic energy. That creative energy may not be in the form of a painting or art project, however: This card also suggests a very strong possibility of pregnancy -- not necessarily yours, but you might be seeing a new addition to your extended family or the family of a close friend in the near future! This card is a good portent for you and those around you.'
+        element: 'Abundant creativity · Fertility · Fulfillment · Mother figure · Productivity',
+        desc: 'Traditionally associated with strong maternal influence, the presence of the Empress is excellent news if you are looking for harmony in your marriage or hoping to start a family. Any artistic endeavours you are currently associated with are also likely to be more successful, as this card often finds those exposed to strong bursts of creative or artistic energy. That creative energy may not be in the form of a painting or art project, however: This card also suggests a very strong possibility of pregnancy -- not necessarily yours, but you might be seeing a new addition to your extended family or the family of a close friend in the near future! This card is a good portent for you and those around you.',
+        past: 'The last opportunity you had is proving its influence now. Whether business, personal, or artistic, a new partnership will require your continued effort to succeed. Remember your most resourceful behaviors, but especially your discipline.',
+        present: 'There may be a new beginning unfolding before you and you decided its quality. Be understanding and especially sensitive to the emotional aspects of life. A loved one will need a helping hand or light in the dark. The role is yours to fill, no matter your choice.',
+        future: 'The future will bring healing and respite for your emotional and physical wounds. Spending time walking on new paths will be more beneficial than mending bridges. Your investments will pay off if you carefully tend them.',
+        interpretation: 'The Empress stands for all things motherly. A nurturing, loving problem solver, she indicates successful business ventures or other positive, productive opportunities to come. She suggests moving forward to fulfill your full potential, and the answer you seek is yes.'
     },
     {
         name: 'The Emperor',
-        desc: 'Counterpart to the Empress, the Emperor is signifies a powerful influence, generally male in nature. This can also include concepts in your life historically considered masculine, such as leadership and authority, self-discipline, and stability through the power of action. Its positive influences suggest you may be on a path to advancement or promotion, but it can also be neutral. Often a companion to those destined to take on greater responsibility, it may presage change or loss that necessitates you stepping forward to shoulder a greater burden than you have in the past. Whatever the impetus for the change, it indicates you may possess an uncommon inner strength that will compel you act and to lead.'
+        element: 'Authority · Father figure · Masculine influence · Rational · Stable',
+        desc: 'Counterpart to the Empress, the Emperor is signifies a powerful influence, generally male in nature. This can also include concepts in your life historically considered masculine, such as leadership and authority, self-discipline, and stability through the power of action. Its positive influences suggest you may be on a path to advancement or promotion, but it can also be neutral. Often a companion to those destined to take on greater responsibility, it may presage change or loss that necessitates you stepping forward to shoulder a greater burden than you have in the past. Whatever the impetus for the change, it indicates you may possess an uncommon inner strength that will compel you act and to lead.',
+        past: 'Authority has played a great role in shaping your life. Your good position may be due to a government or a powerful person. The resolution of a recent conflict is approaching.',
+        present: 'There may be a moment where someone in a position of authority offers to help you. In any form, the more experienced hand that has come to help you may be more capable than yours. Protecting your loved ones is important, but those in a leadership position must know how to compromise. Beware the overly-dependant.\n',
+        future: 'Taking the initiative may lead you closer to your goal, but only if you can bear the responsibility of all your actions. You will be given the opportunity to lead in one of life\'s many roles. Remember those who follow behind you.',
+        interpretation: 'The Emperor, as the counterpart to the Empress, stands for all things fatherly. He is structure, order, and authority in your life. While moving forward in your endeavours, this card indicates that assertiveness and rationality will take you a long way. With that, your answer is yes.'
     },
     {
         name: 'The Hierophant',
-        desc: 'Depending on your own nature, the Hierophant can mean very different things. At its root, it represents doctrine, but doctrine can come in the form of teaching and guidance or rigid authority. Where it appears in your spread is also important, as it is most often indicative of your own approach to the moral, religious, and social conventions of the world. Considered wisely, it helps show the path towards fulfillment.'
+        element: 'Approval · Conformity · Consent · Good advice · Marriage or Union',
+        desc: 'Depending on your own nature, the Hierophant can mean very different things. At its root, it represents doctrine, but doctrine can come in the form of teaching and guidance or rigid authority. Where it appears in your spread is also important, as it is most often indicative of your own approach to the moral, religious, and social conventions of the world. Considered wisely, it helps show the path towards fulfillment.',
+        past: 'There is value in an ambition from your past. Look to a strength that you may have neglected. ',
+        present: 'The opportunity for work or study under a superior is approaching. If the others around you are capable of being wrong, so are you.',
+        future: 'Look to the support of a solid organization or structured principles to achieve success. Your actions should be motivated beyond selfish reasons, or there will be little reward for them.',
+        interpretation: 'The Hierophant is a symbol of education and tradition. This card suggests seeking spiritual guidance or advice in your life. Also indicative of conformity and religious approval, this card has neither a positive or negative connotation. The only answer is maybe.'
     },
     {
         name: 'The Lovers',
-        desc: 'Your first instinct will most likely be to associate this card as representing love, but, much like love, it does not possess a simple nature. Not only does love comes in many forms, but the Lovers may indicate important or difficult choices ahead in your life. This is bad, in that the choices it portends are generally mutually exclusive, paths to two very different futures, but also good, in that it also confirms that at least one of those paths will take you to a good place. As such, if you happen to find it in your spread, you should consider it carefully, but not fear it. It tells a story of difficult choices, likely painful, but that the correct decision and a positive outcome are within your grasp.'
+        element: 'Attachment or combination · Conflicting choices · Partners · Relationships · Union',
+        desc: 'Your first instinct will most likely be to associate this card as representing love, but, much like love, it does not possess a simple nature. Not only does love comes in many forms, but the Lovers may indicate important or difficult choices ahead in your life. This is bad, in that the choices it portends are generally mutually exclusive, paths to two very different futures, but also good, in that it also confirms that at least one of those paths will take you to a good place. As such, if you happen to find it in your spread, you should consider it carefully, but not fear it. It tells a story of difficult choices, likely painful, but that the correct decision and a positive outcome are within your grasp.',
+        past: 'By becoming more in tune with yourself, you will be more able to connect with others. The emotional burden of a recent conflict will soon be lifted and a successful resolution reached. ',
+        present: 'There is an approaching conflict that will test your values. In order to progress, you are going to have to make a decision between love and career. Neither will disappear forever, but the choice will shape your priorities.',
+        future: 'It will benefit you to remember that opposites are two sides of the same coin; there is not one without the other. The right choice will be made only if you have accepted others and yourself.',
+        interpretation: 'The Lovers suggest being at a crossroads somewhere in your life. While this card is highly symbolic of relationships, love, and togetherness, it could also be revealing a positive business partnership or teaming up to move forward in your life. The answer to your question is yes.'
     },
     {
         name: 'The Chariot',
-        desc: 'You have some hard work ahead of you. It may be resolved quickly, but the Chariot is a powerful card, and the labor you are undertaking will probably trend towards long and difficult. You will quite possibly experience rough roads, long uphill slopes, dead ends, and painful setbacks. A good outcome is only assured if the card is upright, but do not let yourself lose hope: This hard road will instil in you a strength of purpose, the ability to overcome through organization and endurance, and the confidence possessed only by those who have done what they thought they could not. Harnessed correctly, few forces can stand against an individual like that.'
+        element: 'Journey · Progression · Strong character · Success from effort · Transportation and movement',
+        desc: 'You have some hard work ahead of you. It may be resolved quickly, but the Chariot is a powerful card, and the labor you are undertaking will probably trend towards long and difficult. You will quite possibly experience rough roads, long uphill slopes, dead ends, and painful setbacks. A good outcome is only assured if the card is upright, but do not let yourself lose hope: This hard road will instil in you a strength of purpose, the ability to overcome through organization and endurance, and the confidence possessed only by those who have done what they thought they could not. Harnessed correctly, few forces can stand against an individual like that.',
+        past: 'Your character has been tested by the tendency to protect your own interests and ego. The struggle has strengthened you and recent events have given you a chance to accomplish your victory.',
+        present: 'Good news is coming and you will better the opposition in a decisive victory.',
+        future: 'Continue your struggle and the end you seek will be achieved. Honor, acclaim, and recognition are all possible outcomes for you if you do not quit.',
+        interpretation: 'The Chariot reveals some sort of journey. With a positive connotation, this journey will most likely be a progression of some sort. It could also be the final success you have been working for. The confidence, direction, and victory shown through this card indicate that the answer is yes.'
     },
     {
         name: 'Strength',
-        desc: 'Strength is the rawest form of power, and you possess it in some form. It is a very happy card if you are fighting illness or recovering from injury. As might be suspected, its influence over you, and the use you put it to, can trend towards light or dark. You likely trend towards facing your problems courageously, head-on, and conquering them through perseverance and will. With this ability to overcome life\'s obstacles, though, comes the responsibility to control yourself, and it this card may be a warning to take command of your own actions or emotions before they damage you or the people you care about.'
+        element: 'Energy · Facing problems · Strengh · Vitality · Willpower',
+        desc: 'Strength is the rawest form of power, and you possess it in some form. It is a very happy card if you are fighting illness or recovering from injury. As might be suspected, its influence over you, and the use you put it to, can trend towards light or dark. You likely trend towards facing your problems courageously, head-on, and conquering them through perseverance and will. With this ability to overcome life\'s obstacles, though, comes the responsibility to control yourself, and it this card may be a warning to take command of your own actions or emotions before they damage you or the people you care about.',
+        past: 'Your strength is balanced and you have both physical endurance and mental strength. This inner strength may lead you to explore the other potentials for your abilities.\n',
+        present: 'Do not turn down any offers that will change your future. Have faith in your own convictions, and be strong enough to trust where you will land.',
+        future: 'There is a strong, energetic release in your future which will lead you into major life changes. By understanding your true value, you will make the most of a wonderful chance to improve your life.',
+        interpretation: 'The Strength card shows a presence of self-assurance and confidently facing problems in your life. It suggests a person who enjoys power but has the capacity to exercise great self-control in all matters. Patience and strength may be required in your pursuits, and the answer you seek is most likely yes.'
+    },
+    {
+        name: 'The Hermit',
+        element: 'Detachment · Guidance · Solitude · Sour-searching and introspection · Thinking and reflection',
+        desc: 'There are times in every life, when one must step back and make a careful examination of their situations and decisions. Finding the Hermit in your spread suggests this is just such a time for you. You are in need of a period of inner reflection, away from the current demands of your position. This retreat can be physical, or a search within. Only a deep and honest introspection will lead to a solution, however.',
+        past: 'The pace of your past has slowed, and it is time to accept this. Continue looking for your finals goals and consider the insight you have recently gained.',
+        present: 'There is someone who can help you through all your problems, and their insight may surprise you. This person is yourself. By understanding yourself, you can better understand others.',
+        future: 'When you become aware of your true road, there will be nothing to stand in your way. Life has challenged you, but you are prepared to make the best of the future.',
+        interpretation: 'The Hermit is a card symbolic of seeking some sort of spiritual enlightenment. Solitary introspection and contemplation are also associated with the Hermit. Perhaps some soul-searching and reflection are required on your part. The answer to your question, therefore, is maybe.'
+    },
+    {
+        name: 'The Wheel Of Fortune',
+        element: 'Change · Destiny · Good luck · Life cycles · New direction',
+        desc: 'Symbolic of life\'s cycles, the Wheel of Fortune speaks to good beginnings. Most likely, you will find the events foretold to be positive, but, being aspects of luck, they may also be beyond your control and influence. Tend those things you can control with care, and learn not to agonize over the ones you cannot.',
+        past: 'The actions of your past are the seeds of your future success. To make progress, you must accept the changes coming.',
+        present: 'There is a beneficial change approaching, but keep in mind that luck is out of your control.',
+        future: 'The future will yield an opportunity to change paths towards personal growth and happiness. You must be ready to change your ways of thinking, because whether or not your actions bring success, they represent beneficial change.',
+        interpretation: 'The Wheel of Fortune stands for luck, changes, and a new direction in your life. While it also shows ups and downs, the overall feel of the card is a positive one indicating changes for the better and good fortune. The answer you are looking for is yes.'
+    },
+    {
+        name: 'Justice',
+        element: 'Balance · Equality · Fairness · Justice · Law and legal matters',
+        desc: 'Justice is a very good card to find in your spread if you have acted with kindness and fairness towards other and, especially, if you have been a victim. It is a significant indicator of a positive resolution, although how and what sort will depend on your own experiences. If you have been unfair, abusive, or otherwise shady and immoral in your dealings, though, pay heed. For the unjust, this card is, at best, a dire warning to change your ways before retribution falls upon you, and, at worst, a simple statement that it is already too late. In neutral cases, it may simply be telling you to seek out balance in your life.',
+        past: 'Balancing your emotions will pay off and bring you harmony in relationships. The confusion of your life can be overcome if you find inner balance.',
+        present: 'You wil receive some gift of advice or have a debt repaid to you. ',
+        future: 'When all is said and done, you will receive the outcome that you truly deserve. Your moral character will be justified, so maintain integrety and strive to balance yourself.',
+        interpretation: 'The Justice card is all about karma, fairness, and balance in different affairs in your life. It does not suggest an outcome that is either for or against you, but accountability, dignity, and integrity are all liked to its presence. There is no clear cut answer to your question.'
+    },
+    {
+        name: 'The Hanged Man',
+        element: 'A period of transition · Gaining for a sacrifice · Suspending · Restricting · Discontinued',
+        desc: 'The Hanged Man can be interpreted in two very different ways. All change is a small kind of death, as the old must die to create the new, and it may simply indicate upheaval or change in your future, perhaps beyond your control, but more likely a decision that, for good or ill, you will not be able to turn back from. The other interpretation is one of sacrifice, although whether this sacrifice is small or great may not be easily interpreted. Both interpretations imply permanence, and that you should give very careful thought to the decisions in your life.',
+        past: 'Letting go of some things from your past has brought new value to your spiritual life. That which you sacrificed must be seen in a new way.',
+        present: 'If there is something being rushed, this may suggest that it is going to pause. Keep in mind that the act of giving help is not more important than the person being helped.',
+        future: 'Many things are unknown to you now, so you must make new goals and plan carefully. Acting at the right moment will get you ahead.',
+        interpretation: 'The Hanged Man suggests some sort of metamorphosis through breaking patterns, letting go, or going through a period of transition. Although it could indicate having to give something up in order to gain a fresh perspective, it has neither positive or negative connotations. Maybe is the answer.'
+    },
+    {
+        name: 'Death',
+        element: 'End · New beginning · Loss · Dramatic change · Destruction',
+        desc: 'Death is indicative of change in your future. This change can be in almost any aspect of your life, but it will almost certainly be permanent, significant, and absolute. Death suggests a complete severance between the past and the future, and it will likely be painful. Despite the sense of loss that may accompany it, Death fills an important and natural role in life, and leads eventually to acceptance. It is a necessary part of moving forward, and you will find the changes easiest if you embrace them, rather than fight them. Expect the end of a close friendship, a job, a marriage, or even a life, but do not focus too greatly on the negative.',
+        past: 'You have moved into a new phase of life. All things change with time, and your path through this world is no different. ',
+        present: 'A major event is approaching and will arrive suddenly. You will lose something valuable.',
+        future: 'To move forward, develop a new perspective on the world. The past is behind you and the rest of your life is still ahead of you, so continue the journey with all your heart.',
+        interpretation: 'The Death card shows some sort of dramatic change in order to have a new beginning. It is often associated with some sort of loss, failure, or destruction. The overall tone of this card is dark and not good. Thus, your answer is no.'
+    },
+    {
+        name: 'Temperance',
+        element: 'Capable · Control · Harmony and balance · Moderation (drugs / alcohol) · Self-confidence',
+        desc: 'An optimistic card, Temperance encourages you to find balance in your life and approach problems with a calm demeanour. It recognizes that opposing forces need not be at war within you. Tread carefully in any major decisions you make, with confidence that good decisions will lead to a good resolution for you.',
+        past: 'The experiences you\'ve had learning to work in harmony with others will be an ongoing trend. Balancing the material and psychic elements in your life has deeply influenced you.\n',
+        present: 'Something you have long desired will come to fruition. Expect a wealthy partnership or marriage to develop in your immediate social circle.',
+        future: 'Take control of your life and practice moderation. By staying in balance, you will resolve any current conflicts and begin a new chapter in your life.',
+        interpretation: 'The Temperance card suggests divine intervention, balance, and harmony. The positive overall presence of this card in your spread reveals high levels of self-confidence and control in your endeavors. The answer provided by this card is most likely yes. '
+    },
+    {
+        name: 'The Devil',
+        element: 'Anger · Jealousy and resentment · Self-delusion · Selfishness · Violence',
+        desc: 'The Devil is in the business of entrapment. It signifies a situation from which there is no escape, or a road leading to one. Forewarning may let you avoid the trap, or it may not. What sort of trap, and how you might avoid it, depends on where the Devil appears in your spread, and what other cards surround it. This card does not foretell doom, only the need for prudence.',
+        past: 'One of the choices you\'ve made was wrong for you. Negative forces are slowing your development.',
+        present: 'There is an event beyond your influence that will change your life. It is uncertain whether it is good or bad, but avoid extravagant behavior and be true to yourself.\n',
+        future: 'The time is coming that you will have to find beauty within yourself and stop the projections you are casting on the world. Find the courage to change your life. The course of your life is beyond your knowing, but this awareness will defeat your self-delusions.',
+        interpretation: 'The Devil is about all things negative. Anger, violence, temptation, fear, and doubt are just some of the terrors associated with this card. It suggests feeling trapped perhaps in an unhealthy relationship, an addiction, or a lie. Without a doubt, this card is telling you no.'
+    },
+    {
+        name: 'The Tower',
+        element: 'Calm and serenity · Destiny · Hope · Opportunity · Renewal',
+        desc: 'Dark and foreboding, the Tower is the embodiment of disruption and conflict. Not just change, but the abrupt and jarring movement caused by the unforeseen and traumatic events which are part of life. The Tower in your spread is always a threat, but life inevitably involves tragedy, and you must decide whether you will face it with grace.',
+        past: 'To make room for the new, the old must be destroyed. The ambitions that you have been following are built on weak foundations and offer false rewards.',
+        present: 'A conflict is coming to a head in your life. Relationships will need to be reevaluated and restructured in order to maintain.',
+        future: 'By withstanding the coming challenges, your future will be bright. Seein things as you want them to be in order to make them become that way. Knowing the worst is behind you can give strength.',
+        interpretation: 'The Tower is all about unexpected events and changes coming up in your life. However, the changes are along the lines of something catastrophic, disasterous, and overall negative. It could be related to some sort of accident, disaster, or damage to another area of your life. The answer provided by this card is no.'
+    },
+    {
+        name: 'The Star',
+        element: 'Calm and serenity · Destiny · Hope · Opportunity · Renewal',
+        desc: 'The Star\'s presence signifies a period of respite and renewal for you. This renewal may be spiritual, physical, or both. It is a particularly positive sign if you or someone close is recovering from illness or injury. It is a light in the darkness, illuminating your future and your past.',
+        past: 'Move on from the hardships of the past and begin your renewal. At the end of all struggles will be peace; rely on your inner strength and external support systems.',
+        present: 'Consider balance and restraint when finding solutions to your current problems. The right amount of help and encouragement will bring harmony and happiness to your circles.',
+        future: 'The time of your renewal is approaching. You have chosen the right path to restore your mental and physical health. By being brave enough to choose the riskier roads, you will inspire those around you.\n',
+        interpretation: 'The Star is symbolic of hope, renewal, and beauty. It suggests a period of spiritual tranquility, happiness, and positive opportunities. The overall feeling of this card is optimistic and serene. The answer suggested by its presence is yes.'
+    },
+    {
+        name: 'The Moon',
+        element: 'Be careful · Caution · Confusion · Delusion · Risk',
+        desc: 'Something in your life is not what it seems. Perhaps a misunderstanding on your part, or a truth you cannot admit to yourself. It may also indicate something important being kept from you by another. This may be a source of worry or depression in your life, and the Moon is a strong indicator that you must rely on your intuition to see through the subterfuge.',
+        past: 'Your understanding of a past event may be distorted by your current perceptions. Reflect on your history and make sure the pieces fit together. By eliminating uncertainty, you will find more peace.',
+        present: 'There is a challenge approaching, taking the form of either a new creative project or a conflict in a relationship. Your history will reveal the best course of action.',
+        future: 'Your imagination will bring you success if your thoughts are coupled with practical action. The struggle to reach your potential may bring about many conflicts in your life, but the results will be beautiful.',
+        interpretation: 'The Moon is an illusive and confusing card. It suggests the presence of risks, secrets, and some level of mental confusion. It would warn you to take caution and be careful in whatever endeavor you are pursuing in your life. The answer you are seeking is no.'
+    },
+    {
+        name: 'The Sun',
+        element: 'Abundance · Achievement · Joy · Productivity · Success',
+        desc: 'As an inherently good influence, finding the Sun is a positive development. It is suggestive of personal gain, and that personal goals and joy are within reach, if you are willing to invest the effort to actualize them. If you are embarking on a new personal venture, such as marriage or beginning a family, the Sun is of particular influence.',
+        past: 'The successes you have achieved in the past will set the stage for future joys. Continue developing your line of work or field of study and the rewards will come.',
+        present: 'There is an opportunity for new friendship or a relationship that will lead to happiness and contentment. Do not give up and you will be led to success.\n',
+        future: 'You are approaching a moment that has the potential to change your life. Take full advantage of this time and you will achieve a future of endless possibility.',
+        interpretation: 'The Sun, being the opposition to the Moon, is a card full of life, joy, and energy. It reveals positive achievements, successful endeavors, and an overall manifestations of good fortune in your life. Thus, the answer it provides for your question is yes.'
+    },
+    {
+        name: 'Judgement',
+        element: 'Change · Decisions · Success · Transformation · Upheaval',
+        desc: 'Judgment tells a story of transition, but unlike Death or the Tower, it is not sudden change, or born of luck or intuition, but change that springs from reason. It signifies plans, often long in the making, coming to fruition. If it points towards the future, it may also speak towards the nature of the change; if there is a choice that needs to be made, ruminate and let your mind guide the decision. Logic, in this case, is a better guide than intuition. Be prepared to make a major decision in your life, likely one that will shape the next chapter of your life.',
+        past: 'Your past is full of good work, but the process of your liberation from those experiences is ongoing. You are beginning a new chapter in your life.',
+        present: 'The present has arrived and the past is relinquishing its hold on your fate. This is the best time to change an element of your lifestyle.',
+        future: 'The fruits of your decisions are coming and you will receive that which you deserve. The path at your feet and the direction it is leading you are clear. You will see your ultimate desire through to the end.',
+        interpretation: 'The Judgement card is representative of some sort of change or transformation, likely one that has already occurred. It could mean the presence of a spiritual or professional calling and making decisions that will lead to your success. The answer to your question is yes.'
+    },
+    {
+        name: 'The World',
+        element: 'Certainty · Completion · Positive · Reward · Satisfaction',
+        desc: 'The World is an indicator of a major and inexorable change, of tectonic breadth. This change represents a chance for you to bring about a desirable end to the Old and a good beginning to the New. It is indicative of growing maturity, a sense of inner balance and deeper understanding. It suggests that you may be approaching a more final sense of identity, and the security in the self that comes with age. It also represents the falling away of boundaries, sometimes in the effusive sense of the spiritual, but sometimes in a purely physical sense, indicating travels or journeys in the future.',
+        past: 'The path you are on will eventually bring you full circle. It may take a while to realize this, but the journey will allow you to accept new responsibilities and points of view.',
+        present: 'The present moment will bring you the fulfillment of a wish or a long desired change in scenery. To find satisfaction, you must accept the ideas of others to be equally valid as your own.',
+        future: 'You must find your purpose to accomplish it. The same with dreams; you must first be aware of it to make it exist. There is no guarantee for success but the experience you gain will have the potential to fulfill your desires.',
+        interpretation: 'The World card means satisfaction and success at a journey\'s end. Fulfillment, rewards, certainty, and positive outcomes are all things directly associated with the presence of this card. The answer more than likely is yes.'
     }
 ];
 var count = 0;
 var backCardImg = 'TarrotImg/back-face.jpg';
 
 function generateCard() {
-    for( var i = 0; i < 9; i++) {
+    for( var i = 0; i < 22; i++) {
         deck1[i].img = 'TarrotImg/MajorArcana/'+ (i+1) + '.png';
     }
     return deck1;
@@ -70,19 +232,18 @@ function shuffle(array) {
 
 function dealCard() {
     shuffle(generateCard());
-    document.write("<input type=\"button\" value=\"Reshuffle\" onClick=\"window.location.reload()\">");
+    document.write("<p></p>")
+    document.write("<button onClick=\"window.location.reload()\">Reshuffle</button>");
     document.write("<table class=\"list\">");
     document.write("<tr>");
     for (var i = 0; i < 22; i++) {
 
-        deck[i] = "<td id='card'><div id='" + i + "' onclick='cardClicked(" + i + ")'><img src='" + backCardImg + "' width=\"73px\" height=\"140px\"/>"
-            + "<img id='face" + i + "' src='" + deck1[i].img + "' width=\"73px\" height=\"140px\" style=\"display: none;\"/></td>";
+        deck[i] = "<td id='card'><div id='" + i + "' onclick='cardClicked(" + i + ")'><img src='" + backCardImg + "' width=\"93px\" height=\"160px\"/>"
+            + "<img id='face" + i + "' src='" + deck1[i].img + "' width=\"93px\" height=\"160px\" style=\"display: none;\"/></td>";
         document.write(deck[i]);
-        if (i == 12 || i == 25 || i == 38 || i == 51 || i == 64 || i == 77) {
+        if (i == 10) {
             document.write("</tr>");
             document.write("<tr>");
-        } else if (i == 77) {
-            document.write("</tr>");
         }
     }
     document.write("</table>");
@@ -96,26 +257,30 @@ function cardClicked(id) {
 
 function selectedCard(id) {
     var faceID = "face" + id;
-    var imgSource = document.getElementById(faceID).src
-    var selectionCard = document.createElement("img");
+    var imgSource = document.getElementById(faceID).src;
     var cardInfo = document.getElementById("cardInfo");
-    var info = "<img class='cardShow' src='" + imgSource + "' />";
-    info += "<p> " + deck1[id].name + "</p>";
-    $('#right').off('click', '.cardShow');
+    var cardReading = document.getElementById("desc");
+    var cardPast = document.getElementById("past");
+    var cardPresent = document.getElementById("present");
+    var cardFuture = document.getElementById("future");
+    var cardInterpretation = document.getElementById("interpretation");
+    var info = "<p> " + deck1[id].name + "</p>";
+    info += "<img class='cardShow' src='" + imgSource + "' />";
+    info += "<p>" + deck1[id].element + "</p>";
+    info += "<button id='displayInfo'>Meaning of this card?</button>"
+    $('#right').off('click', '#displayInfo');
     // Using delegate
-    $('#right').on('click', '.cardShow', function() {
-        var content = "<p>" + deck1[id].desc + "</p>";
-        $(content).dialog({
-            modal: true,
-            buttons: {
-                OK: function() {$(this).dialog("close");}
-            }
-        });
+    $('#right').on('click', '#displayInfo', function() {
+        var content = "<h2>Meaning:</h2><p>" + deck1[id].desc + "</p>";
+        var past = "<h2>Past:</h2><p>" + deck1[id].past + "</p>";
+        var present = "<h2>Present:</h2><p>" + deck1[id].present + "</p>";
+        var future = "<h2>Future:</h2><p>" + deck1[id].future + "</p>";
+        var interpretation = "<h2>Interpretation:</h2><p>" + deck1[id].interpretation + "</p>";
+        cardReading.innerHTML = content;
+        cardPast.innerHTML = past;
+        cardPresent.innerHTML = present;
+        cardFuture.innerHTML = future;
+        cardInterpretation.innerHTML = interpretation;
     })
     cardInfo.innerHTML = info;
-}
-
-function addLink(id) {
-    console.log(deck1[id].name);
-
 }

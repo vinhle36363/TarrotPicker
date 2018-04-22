@@ -1,12 +1,6 @@
 @font-face {
     font-family: 'MyFont';
-    src: url('font/BerryRotunda.ttf');
-}
-
-body {
-    background-image: url("../TarrotImg/background.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    src: url('../CardPages/font/BerryRotunda.ttf');
 }
 
 .wrapper {
